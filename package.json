@@ -1,6 +1,6 @@
 {
     "name": "lilBot",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "lilBot",
     "engines": {
         "node": "5.9.1"
