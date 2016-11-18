@@ -105,6 +105,8 @@ function receivedMessage(event) {
             default:
                 if (messageText.toLowerCase().includes("name")) {
                     sendTextMessage(senderID, "m lilBot");
+                } else if (messageText.toLowerCase().includes("yo")) {
+                    sendTextMessage(senderID, "yo yo..!");
                 } else if (messageText.toLowerCase().includes("father")) {
                     sendTextMessage(senderID, "kartheek");
                 } else {
