@@ -5,7 +5,7 @@ bodyParser = require('body-parser'),
     https = require('https'),
     request = require('request');
 var app = express();
-
+var jsonParser = bodyParser.json();
 
 
 app.set('port', (process.env.PORT || 5000));
