@@ -1,5 +1,12 @@
 var express = require('express');
+bodyParser = require('body-parser'),
+    config = require('config'),
+    crypto = require('crypto'),
+    https = require('https'),
+    request = require('request');
 var app = express();
+
+
 
 app.set('port', (process.env.PORT || 5000));
 
