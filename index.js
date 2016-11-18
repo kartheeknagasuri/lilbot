@@ -38,6 +38,8 @@ app.post('/webhook', function(req, res) {
     //  Make sure this is a page subscription
     if (data.object === 'page') {
 
+        console.log("Entered into page");
+
         // Iterate over each entry - there may be multiple if batched
         data.entry.forEach(function(entry) {
             var pageID = entry.id;
@@ -46,6 +48,7 @@ app.post('/webhook', function(req, res) {
             // Iterate over each messaging event
             entry.messaging.forEach(function(event) {
                 if (event.message) {
+                    console.log("Calling receivedMessage()");
                     receivedMessage(event);
                 } else {
                     console.log("Webhook received unknown event: ", event);
