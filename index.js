@@ -103,7 +103,12 @@ function receivedMessage(event) {
                 break;
 
             default:
-                sendTextMessage(senderID, messageText);
+                if (messageText.includes("name")) {
+                    sendTextMessage(senderID, "m lilBot");
+                } else {
+                    sendTextMessage(senderID, messageText);
+                }
+
         }
     } else if (messageAttachments) {
         sendTextMessage(senderID, "Message with attachment received");
