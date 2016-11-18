@@ -103,9 +103,9 @@ function receivedMessage(event) {
                 break;
 
             default:
-                if (messageText.includes("name")) {
+                if (messageText.toLowerCase().includes("name")) {
                     sendTextMessage(senderID, "m lilBot");
-                } else if (messageText.includes("father")) {
+                } else if (messageText.toLowerCase().includes("father")) {
                     sendTextMessage(senderID, "kartheek");
                 } else {
                     sendTextMessage(senderID, messageText);
