@@ -38,7 +38,7 @@ app.get('/webhook', function(req, res) {
 });
 
 
-app.post('/webhook', function(req, res) {
+app.post('/webhook', jsonParser, function(req, res) {
     var data = req.body;
 
     console.log("Entered Post webhook");
