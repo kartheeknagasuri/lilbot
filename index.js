@@ -105,6 +105,8 @@ function receivedMessage(event) {
             default:
                 if (messageText.includes("name")) {
                     sendTextMessage(senderID, "m lilBot");
+                } else if (messageText.includes("father")) {
+                    sendTextMessage(senderID, "kartheek");
                 } else {
                     sendTextMessage(senderID, messageText);
                 }
