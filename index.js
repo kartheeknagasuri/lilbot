@@ -19,6 +19,7 @@ app.listen(app.get('port'), function() {
 
 
 app.get('/webhook', function(req, res) {
+    console.log("Entered get webhook");
     if (req.query['hub.mode'] === 'subscribe' &&
         req.query['hub.verify_token'] === "lilToken") {
         console.log("Validating webhook");
@@ -33,6 +34,7 @@ app.get('/webhook', function(req, res) {
 app.post('/webhook', function(req, res) {
     var data = req.body;
 
+    console.log("Entered Post webhook");
     // Make sure this is a page subscription
     if (data.object === 'page') {
 
