@@ -7,6 +7,6 @@
     "image": "heroku/nodejs",
     "appSecret": "",
     "pageAccessToken": "EAAZArjlfNx0wBAEYVixfgZAMd6qHZBZCmkRDfYIW9hpxnmrEdXrJFz9UWTEdxFZCiCU4FpR4LhYq8vLj07Wtw2PKPZC36FjRlCeZC5gyfZBdnqm8u7iebgWqSu4KcQ7jfjB5f7zfx8jkhUlpPAKKUNRHZB7i0kOmlzEeTkeNT6aK3RgZDZD",
-    "validationToken": "",
-    "serverURL": ""
+    "validationToken": "lilToken",
+    "serverURL": "https://lilbot.herokuapp.com/"
 }
