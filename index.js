@@ -158,3 +158,17 @@ function callSendAPI(messageData) {
         }
     });
 }
+
+
+app.get('/receiveMesage', function(req, res) {
+    console.log("Received Message" + req);
+    //  console.log(req.query['hub.mode'])
+    // if (req.query['hub.mode'] === 'subscribe' &&
+    //     req.query['hub.verify_token'] === "lilToken") {
+    //     console.log("Validating webhook");
+    //     res.status(200).send(req.query['hub.challenge']);
+    // } else {
+    //     console.error("Failed to Validate. Make sure the validation tokens match.");
+    //     res.sendStatus(403);
+    // }
+});
